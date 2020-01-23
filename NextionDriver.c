@@ -16,6 +16,8 @@
  *   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
+// スタート時点の明るさを明るさコントロールバーに対応 (797行目）
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -790,7 +792,7 @@ int main(int argc, char *argv[])
     sendCommand("sleep=0");
     sendCommand("page 0");
     sendCommand("cls 0");
-    sendCommand("dim=dims");
+    sendCommand("dim=dims");                                    // 明るさコントロールバーに対応
     sendCommand("t0.txt=\"NextionDriver\"");
     sprintf(TXbuffer,"t1.txt=\"%s\"",NextionDriver_VERSION);
     sendCommand(TXbuffer);
