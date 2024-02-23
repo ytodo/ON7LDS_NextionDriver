@@ -29,7 +29,7 @@
     uncomment the following line                                  */
 
 
-#define XTRA
+#define XTRA	1
 #define TRUE	1
 #define FALSE	0
 
